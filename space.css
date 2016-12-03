@@ -7,6 +7,10 @@ ul{
 	list-style: none;
 }
 
+body{
+	font-family: "futura";
+	font-weight: bold;
+}
 .body{
 	border-radius: 100%;
 	border: 1px solid white;
@@ -19,6 +23,18 @@ ul{
 
 .info{
 	float: right;
+	text-align: center;
+	padding-right: 30px;
+	font-size: 25px;
+	position: relative;
+	top: 150px;
+	-webkit-transform: scale(.96);
+    transform: scale(.96);
+    z-index: 1;
+}
+
+.info li{
+	padding:7px 0;
 }
 
 .info a{
@@ -27,11 +43,17 @@ ul{
 }
 
 .info a:hover{
-	font-size: 2em;
+	/*color: #f1c40f;*/
+	-webkit-text-stroke-width: .5px;
+	text-stroke-width:.5px;
+   -webkit-text-stroke-color: #f1c40f;
+   text-stroke-color:#f1c40f;
 }
 
-.solar_system{
- top:250px;
+
+.solar_system, .info{
+ 	 -webkit-transform: scale(.96);
+    transform: scale(.96);
 }
 
 /*.planet{
@@ -47,10 +69,21 @@ ul{
 	border-radius: 100%;
 	text-indent: -9999px;
 }
+
 .body a span{
 	position: absolute;
 }
 
+.title{
+	position: absolute;
+	right: 16%;
+	color: white;
+	font-size: 80px;
+	-webkit-text-stroke-width: .5px;
+	text-stroke-width:.5px;
+   -webkit-text-stroke-color: #f1c40f;
+   text-stroke-color:#f1c40f;
+}
 
 .sun{
 	height:40px;
@@ -85,7 +118,7 @@ ul{
 
 .mercury span{
     position: absolute;
-    background-color: black;
+    background-color: #e74c3c;
     top: 24px;
 }
 
@@ -102,6 +135,7 @@ ul{
 .venus span{
 	top:-6px;
 	left:72px;
+	background-color: #95a5a6;
 }
 
 .earth{
@@ -110,23 +144,31 @@ ul{
     bottom: 70px;
     animation:spin 4s linear infinite;
 	@keyframes spin { 
-		100% 
-		{ 
-	-webkit-transform: rotate(360deg); transform:rotate(360deg); }}
+		100% { 
+	-webkit-transform: rotate(360deg); 
+	transform:rotate(360deg); }}
 }
 
 .earth span{
 	top: -6px;
 	left:102px;
+	background-color: #3498db;
 }
 
 #moon{
 	height:5px;
+	position:absolute;
 	width:5px;
 	top: 12px;
 	left: -4px;
-	animation:spin .5s linear infinite;
-	@keyframes spin { 100% { 
+
+}
+
+.earth span{
+	animation:spin .8s linear infinite;
+	@keyframes spin { 
+		100% { 
+	-webkit-transform: rotate(360deg); 
 	transform:rotate(360deg); }}
 }
 
@@ -142,8 +184,10 @@ ul{
 }
 
 .mars span{
+
 	top: -6px;
 	left: 121px;
+	background-color: #c0392b;
 }
 
 .jupiter{
