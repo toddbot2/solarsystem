@@ -50,6 +50,9 @@ body{
    text-stroke-color:#f1c40f;
 }
 
+.title:hover + .info a{
+	background-color: pink
+}
 
 .solar_system, .info{
  	 -webkit-transform: scale(.96);
@@ -161,11 +164,13 @@ body{
 	width:5px;
 	top: 12px;
 	left: -4px;
+	background-color: #95a5a6; 
+
 
 }
 
 .earth span{
-	animation:spin .8s linear infinite;
+	animation:spin 1s linear infinite;
 	@keyframes spin { 
 		100% { 
 	-webkit-transform: rotate(360deg); 
@@ -175,9 +180,9 @@ body{
 
 
 .mars{
-	height: 260px;
-	width: 260px;
-    bottom: 312px;
+	height: 280px;
+	width: 280px;
+    bottom: 322px;
     animation:spin 7.52s linear infinite;
 	@keyframes spin { 100% { 
 	-webkit-transform: rotate(360deg); transform:rotate(360deg); }}
@@ -191,9 +196,9 @@ body{
 }
 
 .jupiter{
-	height: 320px;
-	width: 320px;
-   	bottom: 605px;
+	height: 340px;
+	width: 340px;
+   	bottom: 632px;
    	animation:spin 19.2s linear infinite;
 	@keyframes spin { 100% { 
 	-webkit-transform: rotate(360deg); transform:rotate(360deg); }}
@@ -202,12 +207,14 @@ body{
 .jupiter span{
 	top: -5px;
 	left: 150px;
+	height:15px;
+	width: 15px;
 }
 
 .saturn{
-	height: 380px;
-	width: 380px;
-    bottom: 955px;
+	height: 400px;
+	width: 400px;
+    bottom: 1002px;
     animation:spin 58s linear infinite;
 	@keyframes spin { 100% { 
 	-webkit-transform: rotate(360deg); transform:rotate(360deg); }}
@@ -217,11 +224,17 @@ body{
 	top: -5px;
 	left: 180px;
 }
+.rings{
+	height: 30px
+	width:30px;
+	background-color: black;
+
+}
 
 .uranus{
-	height:440px;
-	width: 440px;
-	bottom: 1370px;
+	height:460px;
+	width: 460px;
+	bottom: 1433px;
 	animation:spin 84s linear infinite;
 	@keyframes spin { 100% { 
 	-webkit-transform: rotate(360deg); transform:rotate(360deg); }}
@@ -233,9 +246,9 @@ body{
 }
 
 .neptune{
-	height: 500px;
-    width: 500px;
-    bottom: 1845px;
+	height: 520px;
+    width: 520px;
+    bottom: 1925px;
     animation:spin 165s linear infinite;
 	@keyframes spin { 100% { 
 	-webkit-transform: rotate(360deg); transform:rotate(360deg); }}
@@ -247,9 +260,9 @@ body{
 }
 
 .pluto{
-	height: 560px;
-    width: 560px;
-    bottom: 2377px;
+	height: 580px;
+    width: 580px;
+    bottom: 2477px;
     animation:spin 380s linear infinite;
 	@keyframes spin { 100% { 
 	-webkit-transform: rotate(360deg); transform:rotate(360deg); }}
