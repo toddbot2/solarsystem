@@ -13,7 +13,7 @@ body{
 }
 .body{
 	border-radius: 100%;
-	border: 1px dashed white;
+	border: 1px solid white;
 	position: relative;
 	margin: auto;
 }
@@ -175,8 +175,45 @@ body{
 	left: -4px;
 	background-color: #95a5a6;
 	border-radius: 100%; 
+}
 
+#callisto{
+	top: 10px;
+    left: 29px;
+    height: 5px;
+    width: 5px;
+    border-radius: 50%;
+}
 
+#ganymede{
+	top: 10px;
+    left: -9px;
+    height: 5px;
+    width: 5px;
+    background-color: #F2784B;
+}
+
+#europa{
+	top: 22px;
+    left: -4px;
+    height: 5px;
+    width: 5px;
+}
+
+#io{
+	top: -6px;
+    left: 7px;
+    height: 5px;
+    width: 5px;
+
+}
+
+.jupiter span{
+	animation:spin 6s linear infinite;
+	@keyframes spin { 
+		100% { 
+	-webkit-transform: rotate(360deg); 
+	transform:rotate(360deg); }}
 }
 
 .earth span{
