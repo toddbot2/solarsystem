@@ -13,7 +13,7 @@ body{
 }
 .body{
 	border-radius: 100%;
-	border: 1px solid white;
+	border: 1px dashed white;
 	position: relative;
 	margin: auto;
 }
